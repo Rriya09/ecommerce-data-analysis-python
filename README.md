@@ -126,7 +126,7 @@ A simple recommendation system suggests products that a customer has not purchas
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/E-Commerce-Data-Analysis.git
+git clone https://github.com/Rriya09/ecommerce-data-analysis-python.git
 ```
 
 Install dependencies
@@ -158,6 +158,8 @@ python analysis.py
 
 BCA Student | Aspiring Data Analyst 
 
+- GitHub: https://github.com/Rriya09
+  
 Currently learning:
 - Python
 - NumPy
