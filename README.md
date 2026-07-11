@@ -116,9 +116,7 @@ A simple recommendation system suggests products that a customer has not purchas
 - Add Matplotlib visualizations
 - Create interactive dashboards
 - Perform RFM Analysis
-- Build a Machine Learning recommendation system
-- Deploy as a Streamlit web application
-
+ 
 ---
 
 ## ▶️ How to Run
