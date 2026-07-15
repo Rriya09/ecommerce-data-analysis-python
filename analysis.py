@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df=pd.read_excel("ecom.xlsx")
+df=pd.read_excel("Data/ecom.xlsx")
 df = df[["CustomerID", "Description", "Quantity", "UnitPrice"]]
 df["PurchaseAmount"]=df["UnitPrice"]*df["Quantity"]
 df["Description"]=df["Description"].str.strip().str.title()
@@ -91,7 +91,7 @@ print("Loop Time:",end-start)
 print("NumPy Mean:", numpy_mean)
 print("Python Loop Mean:", loop_mean)
 
-df.to_csv("analized.csv",index="False")
+df.to_csv("Data/analized.csv",index="False")
 
 #Top 10 products bar chat
 top10=product_total.sort_values(ascending=False).head(10)
@@ -102,7 +102,7 @@ plt.title("Top 10 Products ",size=20)
 plt.legend()
 plt.tight_layout()
 
-plt.savefig("top10.png",dpi=300,bbox_inches="tight")
+plt.savefig("images/top10.png",dpi=300,bbox_inches="tight")
 plt.show()
 
 #Top 10 VIP cutomers
@@ -113,7 +113,7 @@ plt.ylabel("Total Spending")
 plt.legend()
 plt.tight_layout()
 
-plt.savefig("top10VIP.png",dpi=300,bbox_inches="tight")
+plt.savefig("images/top10VIP.png",dpi=300,bbox_inches="tight")
 plt.show()
 
 #Customer Spending Distribution
@@ -122,7 +122,7 @@ plt.title("Customer Spending Distribution")
 plt.xlabel("Total Spending ")
 plt.ylabel("Number of Customers")
 plt.tight_layout()
-plt.savefig("customer_spending_distribution.png",dpi=300,bbox_inches="tight")
+plt.savefig("images/customer_spending_distribution.png",dpi=300,bbox_inches="tight")
 plt.show()
 
 #Customer Segment
@@ -132,7 +132,7 @@ plt.title("Customer Segmentation")
 
 plt.tight_layout()
 
-plt.savefig("Customer_segment.png",dpi=300,bbox_inches="tight")
+plt.savefig("images/Customer_segment.png",dpi=300,bbox_inches="tight")
 plt.show()
 
 #Sctter plot
@@ -142,7 +142,7 @@ plt.xlabel("Quantity")
 plt.ylabel("Purchase Amount")
 plt.grid(True)
 plt.title("Quantity VS Purchase Amount")
-plt.savefig("Scatter_plot.png",dpi=300,bbox_inches="tight")
+plt.savefig("images/Scatter_plot.png",dpi=300,bbox_inches="tight")
 plt.show()
 
 print(df["Quantity"].sort_values(ascending=False))
